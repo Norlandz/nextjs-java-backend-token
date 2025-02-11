@@ -1,0 +1,10 @@
+import { useDispatch, useSelector, useStore } from 'react-redux';
+import type { RootState, AppDispatch, AppStore } from './store';
+
+// create and export pre-typed versions of the React-Redux hooks as well, to simplify usage later:
+// https://redux-toolkit.js.org/usage/nextjs
+
+// Use throughout your app instead of plain `useDispatch` and `useSelector`
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();
+export const useAppStore = useStore.withTypes<AppStore>();

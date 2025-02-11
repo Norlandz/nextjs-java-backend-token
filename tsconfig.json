@@ -1,0 +1,89 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    // "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // "lib": [
+    //   "DOM",
+    //   "DOM.Iterable",
+    //   "ES2022",
+    // ],
+    "module": "esnext",
+    // "module": "CommonJS",
+    // ####
+    // "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    // #### Bundler mode
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // this prevents the dist folder ...
+    // "allowImportingTsExtensions": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "allowJs": true,
+    // #### Linting
+    "strict": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // ####
+    "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    // ####
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+    // ####
+    "sourceMap": true,
+    // "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": false,
+    // ####
+    "noErrorTruncation": true, // https://stackoverflow.com/questions/53113031/how-to-see-a-fully-expanded-typescript-type-without-n-more-and
+    // ####
+    //     //
+    //     "types": [
+    //       "node",
+    //       // "mocha",
+    //       // "chai",
+    //       // "jsdom",
+    //       // "jasmine",
+    //       // "jquery?",
+    //       // "chrome-types",
+    //       // ;x; "vitest/globals",
+    //       // ;x; "@testing-library/jest-dom"
+    //     ],
+    //     "typeRoots": [
+    //       "node_modules/@types"
+    //     ],
+    // "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    // ####
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
