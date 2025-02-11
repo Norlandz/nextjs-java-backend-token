@@ -26,7 +26,7 @@ Im using **Nextjs** as the frontend, with **Java** as backend.
 
 - `src/app/user/current/dashboard/page.tsx` is the page that is **protected by `useSession()`**, the code can get access token from the session, and can send access token for personal info if needed.
 - `src/app/user/current/profile/page.tsx` is the page that is **protected by `useSession()`**, the code can get access token from the session, and can send access token for personal info if needed.
-- `src/app/api/auth/[...nextauth]/route.tsx` is responsible for **user login and receiving token and check token expiration and send refresh token**.
+- `src/app/api/auth/[...nextauth]/route.ts` is responsible for **user login and receiving token and check token expiration and send refresh token**.
 - `src/actions/user-auth.ts` is **mocking the backend**, sending back access token & refresh token to frontend.
 
 ### Questions
@@ -75,7 +75,7 @@ Im using **Nextjs** as the frontend, with **Java** as backend.
 
 - https://github.com/Norlandz/nextjs-java-backend-token
 
-- `src/app/api/auth/[...nextauth]/route.tsx`
+- `src/app/api/auth/[...nextauth]/route.ts`
 
   ```ts
   import NextAuth from 'next-auth';
