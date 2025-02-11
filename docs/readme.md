@@ -71,6 +71,14 @@ Im using **Nextjs** as the frontend, with **Java** as backend.
   https://sourcehawk.medium.com/next-auth-with-a-custom-authentication-backend-12c8f54ed4ce \
   sourcehawk
 
+### Tech version
+
+```
+"next": "15.1.6",
+"next-auth": "^4.24.11",
+"react": "^19.0.0",
+```
+
 ### Code Details
 
 - https://github.com/Norlandz/nextjs-java-backend-token
@@ -266,11 +274,3 @@ Im using **Nextjs** as the frontend, with **Java** as backend.
     matcher: ['/user/current/setting'],
   };
   ```
-
-### Tech version
-
-```
-"next": "15.1.6",
-"next-auth": "^4.24.11",
-"react": "^19.0.0",
-```
